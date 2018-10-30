@@ -1,0 +1,64 @@
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-1; /*this means the video is on the bottom layer*/
+}
+
+.img-MEDIASLAVE { /*all this shit centers it*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 350px;
+    width: 40%;
+
+}
+
+/* stuff for enter button (youtube.com/watch?v=1_T_eYGNUHw) */
+html {
+  -webkit-box-sizing: border-box; /*safari/chrome, other WebKit */
+  -moz-box-sizing: border-box; /*Firefox, other Gecko*/
+  box-sizing: border-box;
+}
+
+/* center me button */
+body {
+  text-align: center;
+}
+
+/*get rid of default decoration */
+a {
+  text-decoration: inherit;
+}
+
+/* enter button */
+.enterButton {
+  display:inline-block;
+  font-family: "Helvetica";
+  color: #808080;
+  background-color: ;
+  font-weight: 100;
+  font-size: 1.5vmin;
+  font-size: 3vmax;
+  text-align: center;
+  opacity: 0.5;
+  height:auto;
+
+  padding: 5px 40px;
+
+  border: solid 4px #A9A9A9;
+
+  -webkit-transition-duration: 200ms;  /* i may not have a webkit. i just followed the tutorial */
+  transition-duration: 200ms;
+}
+
+/* enter button hover */
+.enterButton:hover {
+  background-color: #A9A9A9;
+  color: #fff;
+}
+
+/* PAGE 2 BELOW */

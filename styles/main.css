@@ -1,0 +1,452 @@
+
+    body {
+      margin: 0;
+      background: #222;
+      font-family: Helvetica;
+      font-weight:800;
+    }
+
+
+    .navbarContainer {
+      width: 100%;
+      margin: 0 auto;    /* this just pushes everything away from the side of page*/
+      position: fixed;
+
+      z-index: 1;
+      top: 0;
+
+      background: #000000;
+    }
+
+    header {
+      background: #000000;
+    }
+
+    /*for this header see: https://youtu.be/FEmysQARWFU?t=279 */
+    header::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .navbarWordmark {
+      float: left;  /* bumps the video/bio/contact up */
+      width: 240px;
+      padding: 10px 0;
+    }
+
+    nav {
+      float: right;
+    }
+
+    /*cuts off dead space from header */
+    nav ul {
+      margin: 0;
+      padding-right: 60px; /*pushes the video|bio|contact group away from right side*/
+      list-style: none; /* gets rid of bullets on video|bio|contact */
+
+    }
+
+    nav li {
+      display: inline-block; /* sets video|bio|contact horizontal instead of default vertical */
+      margin-left: 50px; /* spaces video|bio|contact */
+      padding-top: 20px;
+
+    }
+
+    /*color and underline of video|bio|contact */
+    nav a {
+      color:#ffffff;
+      text-decoration: none;<head>
+
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #f1f1f1;
+      }
+
+      li a {
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+      }
+
+      /* Change the link color on hover */
+      li a:hover {
+          background-color: #555;
+          color: white;
+      }
+      </head>
+    }
+
+    /* hover */
+    nav a:hover {
+      color: #D0D0D0;
+      transition-duration: 399ms;
+    }
+
+/* NEW SECTION-----------------------------------------------------
+
+                  VIDEO menu WEBMs
+
+-----------------------------------------------------------------  */
+
+businessvideo {
+  object-fit: fill;
+}
+
+.businesscategory {
+  filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+    height: 13em;
+	overflow: hidden;
+  z-index: -1;
+}
+
+.businesscategory:hover {
+  filter: none;
+    -webkit-filter: grayscale(0);
+    height: 13em;
+	overflow: hidden;
+}
+
+.musiccategory {
+  filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+    height: 13em;
+	overflow: hidden;
+}
+
+.musiccategory:hover {
+  filter: none;
+    -webkit-filter: grayscale(0);
+    height: 13em;
+	overflow: hidden;
+}
+
+.comedycategory {
+  filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+    height: 13em;
+	overflow: hidden;
+}
+
+.comedycategory:hover {
+  filter: none;
+    -webkit-filter: grayscale(0);
+    height: 13em;
+	overflow: hidden;
+}
+
+.graphicartcategory {
+  filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+    height: 13em;
+	overflow: hidden;
+}
+
+.graphicartcategory:hover {
+  filter: none;
+    -webkit-filter: grayscale(0);
+    height: 13em;
+	overflow: hidden;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display:none !important;
+}
+
+/* NEW SECTION-----------------------------------------------------
+
+                  VIDEO menu Text
+
+-----------------------------------------------------------------  */
+
+/* Centered text */
+.businesstext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font: helvetica;
+    font-size: 80px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    mix-blend-mode: ; /* blend modes: https://css-tricks.com/almanac/properties/m/mix-blend-mode/ */
+    color: black;
+    text-shadow: 2px 2px #ffffff;
+    border: 7px outset #ffffff00; /*i use a background to make the video space clickable, the color is transparent */
+    background: #ffffff00;
+
+    padding-left: 100%;
+    padding-right: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.musictext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font: helvetica;
+    font-size: 80px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    mix-blend-mode: ; /* blend modes: https://css-tricks.com/almanac/properties/m/mix-blend-mode/ */
+    color: black;
+    text-shadow: 2px 2px #ffffff;
+    border: 7px outset #ffffff00; /*i use a background to make the video space clickable, the color is transparent */
+    background: #ffffff00;
+
+    padding-left: 100%;
+    padding-right: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.comedytext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font: helvetica;
+    font-size: 80px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    mix-blend-mode: ; /* blend modes: https://css-tricks.com/almanac/properties/m/mix-blend-mode/ */
+    color: black;
+    text-shadow: 2px 2px #ffffff;
+    border: 7px outset #ffffff00; /*i use a background to make the video space clickable, the color is transparent */
+    background: #ffffff00;
+
+    padding-left: 100%;
+    padding-right: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.graphicarttext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font: helvetica;
+    font-size: 80px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    mix-blend-mode: ; /* blend modes: https://css-tricks.com/almanac/properties/m/mix-blend-mode/ */
+    color: black;
+    text-shadow: 2px 2px #ffffff;
+    border: 7px outset #ffffff00; /*i use a background to make the video space clickable, the color is transparent */
+    background: #ffffff00;
+
+    padding-left: 100%;
+    padding-right: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* NEW SECTION-----------------------------------------------------
+
+                  VIDEO menu CONTENT (everything)
+
+-----------------------------------------------------------------  */
+
+#everything{
+    margin-top: 100px;
+    z-index: 0;
+    position: absolute;
+}
+
+/* NEW SECTION-----------------------------------------------------
+
+                  CSS for video galleries
+
+-----------------------------------------------------------------  */
+
+/* *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; } // required */
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  margin-bottom: 10px;
+  font: 300 60px 'Lato', sans-serif;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+.section-header-underline {
+  border: 1px solid #222;
+  width: 15rem;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.video-gallery {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.video-gallery figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;
+	background: #000;
+	text-align: center;
+	cursor: pointer;
+}
+
+.video-gallery figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.video-gallery figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.video-gallery figure figcaption::before,
+.video-gallery figure figcaption::after {
+	pointer-events: none;
+}
+
+.video-gallery figure figcaption,
+.video-gallery figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+.video-gallery figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.video-gallery figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.video-gallery figure h2 span {
+	font-weight: 800;
+}
+
+.video-gallery figure h2,
+.video-gallery figure p {
+	margin: 0;
+}
+
+.video-gallery figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Individual effects */
+
+
+/*----------------------*/
+/***** gallery-item *****/
+/*----------------------*/
+
+figure.gallery-item {
+	background: #000;
+}
+
+figure.gallery-item img {
+	max-width: none;
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.gallery-item:hover img {
+	opacity: 0.4;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.gallery-item figcaption {
+	text-align: left;
+}
+
+figure.gallery-item h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+
+figure.gallery-item h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.gallery-item:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.gallery-item p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.gallery-item:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+@media screen and (max-width: 50em) {
+	.video-gallery figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+}
