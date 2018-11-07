@@ -1,0 +1,55 @@
+/* columns */
+.column1 {
+  position: relative;
+  z-index: 2;
+  width:40%;
+  height:100%;
+  float:left;
+  padding:15% 2% 0 7%;
+  margin:0;
+  padding:2;
+  font-family:Helvetica;
+  font-size:60px;
+  color: #FFFFFF;
+    text-align: center;
+
+}
+
+.column1 h1 {
+  position: relative;
+  z-index: 2;
+  width:40%;
+  height:100%;
+  float:left;
+  padding:15% 7% 0 15%;
+  margin:0;
+  padding:2;
+  font-family:Helvetica;
+  font-size:40px;
+  color: #FFFFFF;
+    text-align: center;
+}
+
+
+.column2 {
+  position: relative;
+  z-index: 1;
+  width:36%;
+  height:100%;
+  float:left;
+  padding:15% 2% 0 2%;
+  margin:0;
+  padding:2;
+  font-family:Helvetica;
+  font-size:22px;
+  color: #FFFFFF
+}
+
+
+a {
+  color:teal;
+  text-decoration:none;
+}
+a:hover {
+  color:purple;
+}

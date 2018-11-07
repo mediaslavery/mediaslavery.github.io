@@ -1,0 +1,37 @@
+a:visited {color:#ffffff;}
+
+.column1 {
+  width:40%;
+  height:100%;
+  float:left;
+  padding:15% 2% 0 2%;
+  margin:0;
+  padding:2;
+  font-family:Helvetica;
+  font-size:22px;
+
+}
+
+.column1 h1 {
+  width:36%;
+  height:100%;
+  float:right;
+  padding:15% 2% 0 2%;
+  margin:0;
+  padding:2;
+  font-family:Helvetica;
+  font-size:22px;
+}
+
+
+.column2 {
+  width:36%;
+  height:100%;
+  float:left;
+  padding:15% 2% 0 55%;
+  margin:0;
+  padding:2;
+  font-family:Helvetica;
+  font-size:22px;
+  color: #FFFFFF
+}

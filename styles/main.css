@@ -1,5 +1,5 @@
 
-    body {
+    body{
       margin: 0;
       background: #222;
       font-family: Helvetica;
@@ -12,7 +12,7 @@
       margin: 0 auto;    /* this just pushes everything away from the side of page*/
       position: fixed;
 
-      z-index: 1;
+      z-index: 999;
       top: 0;
 
       background: #000000;
@@ -369,6 +369,91 @@ video::-webkit-media-controls {
 	font-size: 68.5%;
 }
 
+/* i made a second video-gallery to prevent it from acting as a video player and display instagram links */
+
+.video-gallery2 {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.video-gallery2 figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;
+	background: #000;
+	text-align: center;
+	cursor: pointer;
+}
+
+.video-gallery2 figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.video-gallery2 figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.video-gallery2 figure figcaption::before,
+.video-gallery2 figure figcaption::after {
+	pointer-events: none;
+}
+
+.video-gallery2 figure figcaption,
+.video-gallery2 figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+.video-gallery2 figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.video-gallery2 figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.video-gallery2 figure h2 span {
+	font-weight: 800;
+}
+
+.video-gallery2 figure h2,
+.video-gallery2 figure p {
+	margin: 0;
+}
+
+.video-gallery2 figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
 /* Individual effects */
 
 
@@ -450,3 +535,9 @@ figure.gallery-item:hover p {
 		width: 100%;
 	}
 }
+
+/* NEW SECTION-----------------------------------------------------
+
+                  BIO page
+
+-----------------------------------------------------------------  */
